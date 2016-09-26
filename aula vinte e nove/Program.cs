@@ -12,10 +12,10 @@ namespace aula_vinte_e_nove
 
             int x = int.Parse(Console.ReadLine());
 
-            int y = 2 * x;
+            int y = 3 * x;
+      
 
-
-            Console.WriteLine("DOBRO = " + y);
+            Console.WriteLine("TRIPLO = " + y);
 
             Console.ReadLine();
          
