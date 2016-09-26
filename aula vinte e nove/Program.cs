@@ -1,5 +1,5 @@
 ﻿using System;
-
+using tabuleiro;
 
 namespace aula_vinte_e_nove
 {
@@ -8,17 +8,14 @@ namespace aula_vinte_e_nove
         static void Main(string[] args)
         {
 
-            Console.Write("Digite um valor inteiro: ");
+            Posicao p;
+            p = new Posicao(1, 2);
 
-            int x = int.Parse(Console.ReadLine());
+            Console.WriteLine("Posicao = " + p);
 
-            int y = 3 * x;
-      
 
-            Console.WriteLine("TRIPLO = " + y);
 
             Console.ReadLine();
-         
         }
     }
 }
