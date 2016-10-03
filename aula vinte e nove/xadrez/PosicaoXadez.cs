@@ -2,12 +2,12 @@
 
 namespace xadrez
 {
-    class PosicaoXadez {
+    class PosicaoXadrez {
 
         public char coluna { get; set; }
         public int linha { get; set; }
 
-        public PosicaoXadez(char coluna, int linha){
+        public PosicaoXadrez(char coluna, int linha){
             this.coluna = coluna;
             this.linha = linha;
 
