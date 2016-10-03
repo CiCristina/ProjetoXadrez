@@ -1,5 +1,8 @@
 ﻿using System;
 using tabuleiro;
+using xadrez;
+
+
 
 namespace aula_vinte_e_nove
 {
@@ -8,12 +11,11 @@ namespace aula_vinte_e_nove
         static void Main(string[] args)
         {
 
-            Posicao p;
-            p = new Posicao(1, 2);
+            PosicaoXadez pos = new PosicaoXadez('c', 7);
 
-            Console.WriteLine("Posicao = " + p);
+            Console.WriteLine(pos);
 
-
+            Console.WriteLine(pos.toPosicao());
 
             Console.ReadLine();
         }
