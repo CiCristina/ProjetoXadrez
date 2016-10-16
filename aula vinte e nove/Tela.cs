@@ -12,13 +12,19 @@ namespace aula_vinte_e_nove {
             imprimirPecasCapturadas(partida);
             Console.WriteLine();
             Console.WriteLine("Turno: " + partida.turno);
-            Console.Write("Aguardando jogada: " + partida.jogadorAtual);
-            if (partida.xeque) {
-                Console.WriteLine("XEQUE!");
+            if (!partida.terminada) {
 
+                Console.Write("Aguardando jogada: " + partida.jogadorAtual);
+                if (partida.xeque) {
+                    Console.WriteLine("XEQUE!");
+
+                }
+            }
+            else {
+                Console.WriteLine("XEQUEMATE");
+                Console.WriteLine("Vencedor: " + partida.jogadorAtual);
             }
         }
-
         public static void imprimirPecasCapturadas(PartidaDeXadrez partida) {
             Console.WriteLine("Peças capturadas: ");
             Console.Write("Brancas: ");

@@ -46,7 +46,8 @@ namespace aula_vinte_e_nove
                     }
                 }
 
-             
+                Console.Clear();
+                Tela.imprimirPartida(partida);
             }
             catch (TabuleiroException e)
             {
