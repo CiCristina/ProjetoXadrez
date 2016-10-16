@@ -13,7 +13,10 @@ namespace aula_vinte_e_nove {
             Console.WriteLine();
             Console.WriteLine("Turno: " + partida.turno);
             Console.Write("Aguardando jogada: " + partida.jogadorAtual);
+            if (partida.xeque) {
+                Console.WriteLine("XEQUE!");
 
+            }
         }
 
         public static void imprimirPecasCapturadas(PartidaDeXadrez partida) {
