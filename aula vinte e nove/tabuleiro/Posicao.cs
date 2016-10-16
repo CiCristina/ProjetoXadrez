@@ -27,10 +27,6 @@ namespace tabuleiro
             return linha
             + ", "
             + coluna;
-        }
-
-            
-            
-        
+        }     
     }
 }
