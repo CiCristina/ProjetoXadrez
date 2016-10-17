@@ -15,12 +15,12 @@ namespace xadrez {
 
         private bool existeInimigo(Posicao pos) {
             Peca p = tab.peca(pos);
-            return p == null || p.cor != cor;
+            return p != null && p.cor != cor;
 
         }
 
         private bool livre(Posicao pos) {
-            Peca p = tab.peca(pos) == null;
+            return tab.peca(pos) == null; 
 
         }
 
@@ -56,7 +56,7 @@ namespace xadrez {
                     mat[pos.linha, pos.coluna] = true;
                 }
                 pos.definirValores(posicao.linha +2, pos.coluna);
-                if (tab.posicaoValida(pos) && livre(pos)) && qteMovimentos == 0) {
+                if (tab.posicaoValida(pos) && livre(pos) && qteMovimentos == 0)  {
                     mat[pos.linha, pos.coluna] = true;
                 }
                 pos.definirValores(posicao.linha +1, pos.coluna - 1);

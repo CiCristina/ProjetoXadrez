@@ -56,7 +56,7 @@ namespace xadrez {
 
             // abaixo
             pos.definirValores(posicao.linha + 1, posicao.coluna);
-            if (tab.posicaoValida(pos) && podeMover(pos)) {
+            while (tab.posicaoValida(pos) && podeMover(pos)) {
                 mat[pos.linha, pos.coluna] = true;
                 if (tab.peca(pos) != null && tab.peca(pos).cor != cor) {
                     break;
@@ -66,7 +66,7 @@ namespace xadrez {
 
             // nordeste
             pos.definirValores(posicao.linha - 1, posicao.coluna -1);
-            if (tab.posicaoValida(pos) && podeMover(pos)) {
+            while (tab.posicaoValida(pos) && podeMover(pos)) {
                 mat[pos.linha, pos.coluna] = true;
                 if (tab.peca(pos) != null && tab.peca(pos).cor != cor) {
                     break;
@@ -76,7 +76,7 @@ namespace xadrez {
 
             // NE
             pos.definirValores(posicao.linha - 1, posicao.coluna +1);
-            if (tab.posicaoValida(pos) && podeMover(pos)) {
+            while (tab.posicaoValida(pos) && podeMover(pos)) {
                 mat[pos.linha, pos.coluna] = true;
                 if (tab.peca(pos) != null && tab.peca(pos).cor != cor) {
                     break;
@@ -85,7 +85,7 @@ namespace xadrez {
             }
             // SE
             pos.definirValores(posicao.linha + 1, posicao.coluna +1);
-            if (tab.posicaoValida(pos) && podeMover(pos)) {
+            while (tab.posicaoValida(pos) && podeMover(pos)) {
                 mat[pos.linha, pos.coluna] = true;
                 if (tab.peca(pos) != null && tab.peca(pos).cor != cor) {
                     break;
@@ -94,7 +94,7 @@ namespace xadrez {
             }
             // SO
             pos.definirValores(posicao.linha + 1, posicao.coluna -1);
-            if (tab.posicaoValida(pos) && podeMover(pos)) {
+            while (tab.posicaoValida(pos) && podeMover(pos)) {
                 mat[pos.linha, pos.coluna] = true;
                 if (tab.peca(pos) != null && tab.peca(pos).cor != cor) {
                     break;
